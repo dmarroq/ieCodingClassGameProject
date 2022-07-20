@@ -1,0 +1,71 @@
+# pseudocode.txt
+
+define a function that takes command options from the main:
+
+    print the options available
+
+    movement:
+        (north, south, east, west (up, down):
+        room1: North (room3), West (room2)
+        room2: East (room1)
+        room3: South (room1), North (if Torch: (down (room4)), if no Torch: (gameEnd))
+        room4: Up (room3), South (finalRoom)
+        finalRoom: if puzzle correct: Up (gameEnd)
+
+    view inventory (a separate text file):
+        print inventory
+
+    get/pick up:
+        add things to inventory (add to the text file)
+        room1: None
+        room2: Small Boots
+        room3: Amulet
+        room4: None
+        finalRoom:
+
+    room specific action (inspect):
+        room1: If inspect:
+            twirl (x3, gets "heavy air cloak")
+        room2: If inspect:
+            pull torch (x3, break torch), apologize (x1, get "torch friend")
+        room3: If inspect:
+            Amulet
+        room4: Carry statue
+        finalRoom (puzzle loop): If inspect:
+            Options:
+                If Put shoes on statue:
+                    "Statue moves to stand in front of door on a previously unseen imprint on the floor"
+                If Put Amulet on statue:
+                    Nothing happens. Continue loop
+
+
+
+    save/load action (if possible):
+    input SAVE or LOAD
+    Records onto the main story text maybe
+
+    exit:
+        Ends game
+
+
+define a function that stores and gets log of actions (possibly if have time make a save/load ability?):
+    Take the returns of the command function and save to a new text file (call it log.txt or something).
+    Log what room the action was taken.
+
+
+define a function that prints the story text onto the terminal:
+    open story text
+    read the story text
+    have the story text be printed according to the commands
+    (can probably use story text to save and load by writing to the story text with identifier)
+
+
+main function:
+    input command option as while loop with command function:
+    while input != 'EXIT':
+    list command options per room using if conditionals:
+    if room1:
+    output room1 story text on terminal
+    have input read the choices available, using try except to stay in loop until a valid choice inputted
+
+    call story read function

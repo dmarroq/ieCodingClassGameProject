@@ -1,0 +1,86 @@
+# Has to have at least four rooms. For fun, have all rooms have a room specific action.
+
+room0. (Beginning room):
+Wake up in beginning room. Set scene as "Dark stone room with heavy air". Can take movement action, inspect action,
+inventory action, room specific action. Leads into two rooms, West or North. In beginning room, can twirl.
+Describe air as heavy and flows with movement. After 3 twirls, air seems amused and drapes itself as a cloak around user
+West room has flickering light, North is dark.
+
+Movement: North, West
+If go West: Go to room 2a
+If go North: Go to room 2b
+
+Special action: Twirl
+If try to twirl: (3) The air swirls around you. It feels cool on your skin. Would you like to twirl again?
+(2) The air seems to wrap around your arms and fingers, almost like water. Would you like to twirl again?
+(1) The air almost feels like it weighs on your shoulders. There's a whistling laughter in your ear.
+The air drapes around your body like a cloak. You now have a Heavy Air friend!
+
+Pick up action: None
+If try to Pick Up: Nothing Happened!
+
+
+room1. (West; dead end with special item or action):
+Empty except for a pair of shoes and a torch that looks like a secret!
+
+Movement action: East
+If go East: Go to room 1
+
+Special action 1: Pull torch.
+If pull torch: Lucky! It may be a secret passageway! After three tries to pull torch down, it breaks.
+Unfortunately it was just a normal torch. How rude! You just broke the poor torch.
+Cloak whistles in amusement as torch dims in disappointment at your rudeness.
+
+Special action 2: Apologize to torch.
+If apologize to Torch: Say maybe you can fix them if you get out! You now have a Broken Torch friend :).
+It floats around you, hissing slightly as Heavy Air slaps at it with a mischievous whispering chuckle.
+
+Pick up action: shoes. You got a pair of shoes! They're too small for you though. (Stored in inventory)
+
+
+room2. (North of room1):
+If you do not have Broken Torch:
+The room is darker than the previous one. You cannot see anything!
+Movement action: North, South (If have time, East, West branching story path)
+If go East/West: Hit a wall
+If go North: You fell! Game End
+If go South: Go back to room 1
+
+# Special action: If went East/West: Feel walls
+
+
+# Pick up action: If felt walls:
+
+
+If you have Broken Torch:
+Broken Torch's flickering light illuminates what it can, yet the room is dark,
+high walls rising into a deeply shadowed ceiling. You feel the dark press on you.
+Heavy Air seems to sigh and float up, while Broken Torch huddles
+closer to you, light fading slightly.
+The room is empty except for a gleaming golden amulet with a blood-red ruby
+embedded in its center. It hangs from a worn leather strap seemingly from nothing.
+At the far north of the rooom, you can see a pit with a ladder leading down into another room.
+
+Movement: Down, South
+If go Down: You descend to the next room (room3)
+If go South: You go back (room1)
+
+Special Action: Ask Heavy Air to help Broken Torch:
+Heavy Air sighs, but relents, blowing up into Broken Torch. Broken Torch immediately brightens up.
+
+Pick up: You've obtained the Amulet! (stored in inventory)
+
+
+room3. (Down of room2b): After going through a long hallway, you reach a small room.
+Facing the door to another room is a heavy stone statue. It
+
+Movement action:
+
+Special action:
+
+Pick up:
+
+
+
+finalRoom. ():
+Solve a puzzle
